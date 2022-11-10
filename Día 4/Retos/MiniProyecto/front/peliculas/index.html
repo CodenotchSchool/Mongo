@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <title>Profesionales</title>
+</head>
+<body>
+    <header>
+        <h1>Mini Proyecto Mongo DB</h1>
+        <ul>
+            <li><a href="../profesionales/index.html">Profesionales</a></li>
+            <li><a href="../peliculas/index.html" class="active">Películas</a></li>
+        </ul>
+    </header>
+    <!-- aquí faltarían los id de los inputs para usarlos con el js -->
+    <main>
+        <div class="form form__peliculas">
+            <h2>Películas</h2>
+            <form action="">
+                <input type="text" placeholder="Título" id="titulo">
+                <input type="number" placeholder="Año de lanzamiento" id="anyoLanzamiento">
+                <input type="text" placeholder="Nacionalidad" id="nacionalidad">
+                <input type="text" placeholder="Lengua" id="lengua">
+                <input type="text" placeholder="Plataforma" id="plataforma">
+                <label>¿Es de Marvel?</label>
+                <select name="esMCU" id="esMCU">
+                    <option value="true">Si</option>
+                    <option value="false">No</option>
+                </select>
+                <input type="text" placeholder="Personaje principal" id="personajePrincipal">
+                <input type="text" placeholder="Productor" id="productor">
+                <input type="text" placeholder="Distribuidor" id="distribuidor">
+                <input type="text" placeholder="Género" id="genero">
+                <input type="text" placeholder="Actor, Actor, Actor..." id="actores">
+                <input type="text" placeholder="Director, Director, Director..." id="directores">
+                <input type="text" placeholder="Escritor, Escritor, Escritor..." id="escritores">
+                <input type="text" placeholder="ID" id="id">
+            </form>
+    
+            <div class="btns">
+                <button id="btn-get">Mostrar</button>
+                <button id="btn-post">Crear</button>
+                <button id="btn-put">Actualizar</button>
+                <button id="btn-del">Eliminar</button>
+            </div>
+        </div>
+    </main>
+
+    <section>
+    <!-- Usa este contenedor y la clase card cuando hagas el innerHTML y ya estaría  -->
+        <div class="card-container" id="card-container">
+            <!-- <div class="card">
+                <h3>Paquito Gómez Álvarez</h3>
+                <ul>
+                    <li>ID: Carpintero</li>
+                    <li>ID Grupo: Español</li>
+                    <li>Año de admisión: 39</li>
+                </ul>
+            </div>      -->
+        </div>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+    <script src="pelicula.js"></script>
+</body>
+</html>
